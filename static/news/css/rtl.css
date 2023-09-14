@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'parvaz';
+    src: url('W_parvaz.TTF');
+    font-weight: 300;
+}
+
+body{
+  direction: rtl;
+  text-align: right;
+  font-family: "parvaz" !important;
+}
+
+.navbar-expand-lg .navbar-nav {
+    margin-left: initial !important;
+    margin-right: auto;
+}
+
+.post-preview > .post-meta {
+  text-align: left;
+}
+
+.site-heading .h1 {
+    font-size: 40px;
+}
