@@ -1,0 +1,14 @@
+<div class="pure-css-nav nav-justified">
+  <nav>
+    <ul>
+        {% for cat in Categories %}
+          {% if cat.parent == None %}
+            <li><a style="font-size: 20px; margin: 0px 30px;" href="{% url 'news:category' cat.slug %}">{{cat.title}}</a>
+              {% if cat.subcat.active %}
+                  {% include 'news/inclusion_tags/category_loop.html' %}
+              {% endif %}
+          {% endif %}
+        {% endfor %}
+    </ul>
+  </nav>
+</div>

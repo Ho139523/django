@@ -1,0 +1,9 @@
+<ul>
+  {% for cat in cat.subcat.active %}
+    <li><a style="font-size: 20px; margin: 0px 30px;" href="{% url 'news:category' cat.slug %}">{{cat.title}}</a> 
+    {% if cat.subcat.active %}
+        {% include 'news/inclusion_tags/category_loop.html' %}
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>

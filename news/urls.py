@@ -1,15 +1,16 @@
 from django.urls import path
-from .views import home, description, category
-from django.conf import settings
-from django.conf.urls.static import static
+from .views import Home, Description, CategoryList, AutherList
+
 
 app_name='news'
 urlpatterns = [
-    path('', home, name='home'),
-    path('page/<int:page>', home, name='home'),
-    path('article/<slug:slug>/', description, name='description'),
-    path('category/<slug:slug>/', category, name='category'),
-    path('category/<slug:slug>/page/<int:page>', category, name='category')
+    path('', Home.as_view(), name='home'),
+    path('page/<int:page>', Home.as_view(), name='home'),
+    path('article/<slug:slug>/', Description.as_view(), name='description'),
+    path('category/<slug:slug>/', CategoryList.as_view(), name='category'),
+    path('category/<slug:slug>/page/<int:page>', CategoryList.as_view(), name='category'),
+    path('author/<slug:username>/', AutherList.as_view(), name='author'),
+    path('author/<slug:username>/page/<int:page>', AutherList.as_view(), name='author'),
 ]
 
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+

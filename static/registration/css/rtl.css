@@ -1,0 +1,27 @@
+@font-face {
+  font-family: Dirooz;
+  src: url('./fonts/Dirooz.eot');
+  src: url('./fonts/Dirooz.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/Dirooz.woff2') format('woff2'),
+       url('./fonts/Dirooz.woff') format('woff'),
+       url('./fonts/Dirooz.ttf') format('truetype');
+}
+
+body{
+  direction: rtl;
+  text-align: right;
+  font-family: "Dirooz" !important;
+}
+
+
+.Husseinclass {
+  text-align: left !important;
+  padding-left: 10px;
+}
+
+.error {
+  color: #ff6666;
+  background-color: rgb(106 77 77 / 24%);
+  text-align: center;
+}
+

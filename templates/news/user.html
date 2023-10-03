@@ -1,0 +1,17 @@
+{% extends "news/base_list.html" %}
+
+{% block title %}لیست مقالات{% endblock %}
+
+{% block category_title %}
+  <h3 class="alert alert-primary text-center">نویسنده: {{Author.get_full_name}}</h3>
+{% endblock %}
+
+
+{% block previous_button_link %}
+  {% url 'news:author' Author.username page_obj.next_page_number %}
+{% endblock %}
+
+
+{% block next_button_link %}
+  {% url 'news:author' Author.username page_obj.previous_page_number %}
+{% endblock %}

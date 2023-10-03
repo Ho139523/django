@@ -1,0 +1,17 @@
+{% extends "news/base_list.html" %}
+
+{% block title %}{{Categories.title}}{% endblock %}
+
+{% block category_title %}
+  <h3 class="alert alert-primary text-center">دسته‌بندی: {{Categories.title}}</h3>
+{% endblock %}
+
+
+{% block previous_button_link %}
+  {% url 'news:category' Categories.slug page_obj.next_page_number %}
+{% endblock %}
+
+
+{% block next_button_link %}
+  {% url 'news:category' Categories.slug page_obj.previous_page_number %}
+{% endblock %}
