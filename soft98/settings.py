@@ -17,7 +17,7 @@ SECRET_KEY = 'django-insecure-^q1hi+yt=8l)$xh_&=3m*((cvw)%j5952y9-o+)m)o4x8*re@4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['hussein2079.pythonanywhere.com']
 
 
 # Application definition
@@ -35,6 +35,8 @@ INSTALLED_APPS = [
     'widget_tweaks',
     'crispy_forms',
     'crispy_bootstrap4',
+    'rest_framework',
+    'api.apps.ApiConfig',
 ]
 
 
