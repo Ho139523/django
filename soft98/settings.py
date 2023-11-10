@@ -140,34 +140,6 @@ AZ_IRANIAN_BANK_GATEWAYS = {
            'TERMINAL_CODE': '<YOUR TERMINAL CODE>',
            'SECRET_KEY': '<YOUR SECRET CODE>',
        },
-       'SEP': {
-           'MERCHANT_CODE': '<YOUR MERCHANT CODE>',
-           'TERMINAL_CODE': '<YOUR TERMINAL CODE>',
-       },
-       'ZARINPAL': {
-           'MERCHANT_CODE': '<YOUR MERCHANT CODE>',
-           'SANDBOX': 0,  # 0 disable, 1 active
-       },
-       'IDPAY': {
-           'MERCHANT_CODE': '<YOUR MERCHANT CODE>',
-           'METHOD': 'POST',  # GET or POST
-           'X_SANDBOX': 0,  # 0 disable, 1 active
-       },
-       'ZIBAL': {
-           'MERCHANT_CODE': '<YOUR MERCHANT CODE>',
-       },
-       'BAHAMTA': {
-           'MERCHANT_CODE': '<YOUR MERCHANT CODE>',
-       },
-       'MELLAT': {
-           'TERMINAL_CODE': '<YOUR TERMINAL CODE>',
-           'USERNAME': '<YOUR USERNAME>',
-           'PASSWORD': '<YOUR PASSWORD>',
-       },
-       'PAYV1': {
-           'MERCHANT_CODE': '<YOUR MERCHANT CODE>',
-           'X_SANDBOX': 0,  # 0 disable, 1 active
-       },
    },
    'IS_SAMPLE_FORM_ENABLE': True, # اختیاری و پیش فرض غیر فعال است
    'DEFAULT': 'BMI',
